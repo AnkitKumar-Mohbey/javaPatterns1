@@ -3,6 +3,15 @@ package theLoverChoice;
 import java.util.Scanner;
 
 public class triPatterns {
+
+	public static void invertedTriPattern(int totalRow) {
+		for(int rowNo = 1; rowNo <= totalRow; rowNo++) {
+			for(int colNo = 1; colNo <= totalRow - rowNo + 1; colNo++) {
+				System.out.print(totalRow - rowNo + 1);
+			}
+			System.out.println();
+		}
+	}
 	
 	public static void invertedTriPattern(int totalRow) {
 		for(int rowNo = 1; rowNo <= totalRow; rowNo++) {
